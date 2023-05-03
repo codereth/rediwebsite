@@ -1,0 +1,260 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idea's and plan for wedding</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <!-- header page start -->
+    <header>
+        <div class="navbar">
+            <section class="flex">
+                <a href="{% url 'index' %}" class="logo">elite events<span>.</span></a>
+                <nav>
+                    <li><a href="{% url 'index' %}">home</a></li>
+                    <li><a href="{% url 'news' %}">news</a></li>
+                    <li><a href="{% url 'fashion' %}">fashion</a></li>
+                    <li><a href="{% url 'ideas' %}">gallery</a></li>
+                    <li><a href="{% url 'gifts' %}">GIFTS</a></li>
+                    <li><a href="{% url 'about' %}">about</a></li>
+                    <li><a href="{% url 'contact' %}">contact</a></li>
+                </nav>
+                <form class="search-form">
+                    <input type="text" placeholder="search here..." required maxlength="100" name="search_box">
+                    <button type="submit" class="fas fa-search" name="search_btn"></button>
+                </form>
+                
+                <div class="icons">
+                    <div id="user-btn" class="fas fa-user"></div>
+                    <div id="toggle-btn" class="fas fa-sun"></div>
+                </div>
+        </div>
+        <div class="header_title contact-header-title">
+            <h1>WEDDING IDEAS & ADVICE</h1>
+            <p><span>home</span> > gallery</p>
+        </div>
+    </header>
+    <!-- header page end -->
+    <header class="fashion">
+        <div class="left">
+            <ul class="top-menu">
+                <li style="padding-bottom: 0;"><small>HOME / GALLERY</small></li>
+                <li><a href="#">6 total items</a></li>
+                <li><a href="#" style="font-weight: bold;;">FILTER</a></li>
+            </ul>
+            
+                <li><a href="#" 
+                    style="color: var(--black);
+                        font-size: 17px;
+                        text-transform: capitalize;
+                        padding: 30px;
+                        margin-bottom: px;font-weight: bold;">
+                    SIZE
+                </a></li>
+            <ul>
+                <li><input type="checkbox" class="checkbox"> <a href="#">03XL</a></li>
+                <li><input type="checkbox" class="checkbox"> <a href="#">unstitched</a></li>
+                <li><input type="checkbox" class="checkbox"> <a href="#">freeSize</a></li>
+            </ul>
+            <li><a href="#" 
+                style="color: var(--black);
+                    font-size: 17px;
+                    text-transform: capitalize;
+                    padding: 30px;
+                    margin-bottom: px;font-weight: bold;">
+                COLOR
+            </a></li>
+            <ul>
+                <li><input type="checkbox" class="checkbox"> <a href="#">pink (6)</a></li>
+                <li><input type="checkbox" class="checkbox"> <a href="#">red (5)</a></li>
+                <li><input type="checkbox" class="checkbox"> <a href="#">blue (4)</a></li>
+                <li><input type="checkbox" class="checkbox"> <a href="#">brown (3)</a></li>
+                <li><input type="checkbox" class="checkbox"> <a href="#">peach (2)</a></li>
+                <li><input type="checkbox" class="checkbox"> <a href="#">wine (1)</a></li>
+                <li><input type="checkbox" class="checkbox"> <a href="#">pista (0)</a></li>
+            </ul>
+            <li><a href="#" 
+                style="color: var(--black);
+                    font-size: 18px;
+                    text-transform: capitalize;
+                    padding: 10px;
+                    padding-top: 10px;
+                    margin-bottom: 5px;
+                    margin-bottom: px;font-weight: bold;">
+                DESIGN BY
+            </a></li>
+            <ul>
+                <li><input type="checkbox" class="checkbox"> <a href="#">billini</a></li>
+                <li><input type="checkbox" class="checkbox"> <a href="#">harlo</a></li>
+                <li><input type="checkbox" class="checkbox"> <a href="#">milla nova</a></li>
+                <li><input type="checkbox" class="checkbox"> <a href="#">madi lane</a></li>
+                <li><input type="checkbox" class="checkbox"> <a href="#">st patrick</a></li>
+                <li><input type="checkbox" class="checkbox"> <a href="#">pronvias</a></li>
+                <li><input type="checkbox" class="checkbox"> <a href="#">evie piter</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="fashion-part">
+                <div class="fashion-title">MOST VIEWED WEDDING IMAGES</div>
+                <div class="fashion-list-container">
+                    <div class="fashion-list">
+                        <figure>
+                            <img src="{% static 'img/images/AMY-B-600x800.jpg' %}" alt="">
+                        </figure>
+                        <div class="gallery-de-dis">
+                            <h2>2023 Wedding Dress Trends: The Ultimate Style Guide from Lovely Bride</h2>
+                            <small>post time: 28 / 1 / 8</small>
+                            
+                        </div>
+                    </div>
+                    <div class="fashion-list">
+                        <figure>
+                            <img src="{% static 'img/images/Shop Saree_Desktop revised dimension jpg_16-12-2022-13-45.jpeg' %}" alt="">
+                        </figure> 
+                        <div class="gallery-de-dis">
+                            <h2>2023 Wedding Dress Trends: The Ultimate Style Guide from Lovely Bride</h2>
+                            <small>post time: 28 / 1 / 8</small>
+                            
+                        </div>
+                    </div>
+                    <div class="fashion-list">
+                        <figure>
+                            <img src="{% static 'img/images/rani-pink-floral-embroidered-lehenga-ulb4491-425-1.jpg' %}" alt="">
+                        </figure>
+                        <div class="gallery-de-dis">
+                            <h2>2023 Wedding Dress Trends: The Ultimate Style Guide from Lovely Bride</h2>
+                            <small>post time: 28 / 1 / 8</small>
+                            
+                        </div>
+                    </div>
+                    <div class="fashion-list">
+                        <figure>
+                            <img src="{% static 'img/images/LENA_EY409_15-600x800.jpg' %}" alt="">
+                        </figure>
+                        <div class="gallery-de-dis">
+                            <h2>2023 Wedding Dress Trends: The Ultimate Style Guide from Lovely Bride</h2>
+                            <small>post time: 28 / 1 / 8</small>
+                            
+                        </div>
+                    </div>
+                    <div class="fashion-list">
+                        <figure>
+                            <img src="{% static 'img/images/SAKURA-B-600x800.jpg' %}" alt="">
+                        </figure>
+                        <div class="gallery-de-dis">
+                            <h2>Elegant Pink Designer Lehenga</h2>
+                            <small>post time: 23 / 6 / 1</small>
+                        </div>
+                    </div>
+                    <div class="fashion-list">
+                        <figure>
+                            <img src="{% static 'img/images/georgette-rani-pink-lehenga-unlb4281-425-15.jpg' %}" alt="">
+                        </figure>
+                        <div class="gallery-de-dis">
+                            <h2>TRADITIONAL RANI LEHENGA</h2>
+                            <small>post time: 23 / 6 / 9</small>
+                        </div>
+                    </div>
+                    <div class="fashion-list">
+                        <figure>
+                            <img src="{% static 'img/images/graceful-light-pink-lehenga-unlb4271-415-11.jpg' %}" alt="">
+                        </figure>
+                        <div class="gallery-de-dis">
+                            <h2>Dark Pink Heavy Embroidered Lehenga</h2>
+                            <small>post time: 23 / 5 / 8</small>
+                        </div>
+                    </div>
+                    <div class="fashion-list">
+                        <figure>
+                            <img src="{% static 'img/images/medium_EUGENIA_d31a9619e9-600x800.jpeg' %}" alt="">
+                        </figure>
+                        <div class="gallery-de-dis">
+                            <h2>DETAILED PINK LEHENGA</h2>
+                            <small>post time: 23 / 4 / 6</small>
+                        </div>
+                    </div>
+                    <div class="fashion-list">
+                        <figure>
+                            <img src="{% static 'img/images/HADLEY.jpg' %}" alt="">
+                        </figure>
+                        <div class="gallery-de-dis">
+                            <h2>Beautiful Embroidered Pink Lehenga</h2>
+                            <small>post time: 23 / 3 / 6</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+
+
+
+
+
+     <!-- footer page start -->
+     <footer>
+        <div class="follwer-viwe">
+            <li><a href="#"><i class="fab fa-facebook"></i> 3.7M </a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i> 1.3M</a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i> 195K</a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fab fa-tiktok"></i> 666K</a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fa-regular fa-envelope"></i> SUBSCRIBE</a></li>
+            <span class="separat-line"></span>
+        </div>
+
+        <div class="box-container">
+            <div class="login">
+                <li><a href="{% url 'index' %}">ELITE EVENTS.</a></li>
+                <li><h4>sign up for the brides newsletter</h4></li>
+                <form action="">
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                    <input type="submit" value="SUBSCRIBE" class="btn-white">
+                </form>
+                <div class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </div>
+
+            <ul class="Quick-link">
+                <h3>Quick link</h3>
+                <li><a href="{% url 'news' %}">news</a></li>
+                <li><a href="{% url 'fashion' %}">fashion</a></li>
+                <li><a href="{% url 'ideas' %}">ideas</a></li>
+                <li><a href="{% url 'gifts' %}">REGISTRY & GIFTS</a></li>
+            </ul>
+            <ul class="about">
+                <h3>ABOUT US</h3>
+                <li><a href="{% url 'about' %}">ABOUT US</a></li>
+                <li><a href="#">ADVERTISE</a></li>
+                <li><a href="#">TERMS OF USE</a></li>
+                <li><a href="#">EDITORIAL POLICY</a></li>
+            </ul>
+            <ul class="POLICY">
+                <h3>POLICY</h3>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                <li><a href="#">DO NOT SELL MY <br>PERSONAL INFORMATION</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- footer page end -->
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>

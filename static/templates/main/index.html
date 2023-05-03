@@ -1,0 +1,250 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elite events</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome-free/css/all.min.css' %}">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- header page start -->
+    <header>
+        <div class="navbar">
+            <section class="flex">
+                <a href="{% url 'index' %}" class="logo">elite events<span>.</span></a>
+                <nav>
+                    <li><a href="{% url 'index' %}">home</a></li>
+                    <li><a href="{% url 'news' %}">news</a></li>
+                    <li><a href="{% url 'fashion' %}">fashion</a></li>
+                    <li><a href="{% url 'ideas' %}">gallery</a></li>
+                    <li><a href="{% url 'gifts' %}">GIFTS</a></li>
+                    <li><a href="{% url 'about' %}">about</a></li>
+                    <li><a href="{% url 'contact' %}">contact</a></li>
+                </nav>
+                <form class="search-form">
+                    <input type="text" placeholder="search here..." required maxlength="100" name="search_box">
+                    <button type="submit" class="fas fa-search" name="search_btn"></button>
+                </form>
+                
+                <div class="icons">
+                    <div id="user-btn" class="fas fa-user"></div>
+                    <div id="toggle-btn" class="fas fa-sun"></div>
+                </div>
+        </div>
+        <div class="header_title">
+            
+            <h1>wedding planner & event designers</h1>
+            
+            <p>we have more than 25 yesr of event-planner experience and handle almost everthing in-house, form coordination to floral design to lighting, Full-services and individual design packages available.</p>
+            <a href="{% url 'about' %}"  class="heade-btn">more about us</a>
+        </div>
+    </header>
+    <!-- header page end -->
+
+    <!-- about-us start -->
+    <header id="about-us">
+        <h1 class="title">about us<span>.</span></h1>
+        <div class="about-us-flex">
+            <img src="{% static 'img/Elspeth-Velten.jpg' %}" alt="">
+            <div class="about-us-title">
+                <h1 class="about">Elspeth Velten</h1>
+                <span class="job-field">Associate Group General Manager</span>
+                <p class="about-title">
+                    Elspeth has been with Dotdash Meredith since 2016.
+                    Before joining Brides, Elspeth spent time in the travel world as a founding editor of TripSavvy, Dotdash Meredith’s travel brand, and editor at Luxury Escapes, an Australian eCommerce site based in Melbourne. Elspeth landed in the fashion closet at Time Inc...
+                </p>
+                <button class="btn">READ MORE</button>
+            </div>
+        </div>
+        
+    </header>
+    <!-- about-us end -->
+
+    <!-- news page start -->
+    <header id="News">
+        <h1 class="title">daily NEWS<span>.</span></h1>
+
+        <div class="news-order">
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/abt-1.jpg' %}" alt="">
+                </div>
+                <span class="job-field">BACHELORTTE PARTY || 5 day ago</span>
+                <h1 class="about">The 17 Best Personalized Bridesmaids Gifts Your Bridal Party Will Love</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/bg2.jpg' %}" alt="">
+                </div>
+                <span class="job-field">wedding dresses || 4 week ago</span>
+                <h1 class="about">The 18 Best Personalized Bridal Shower Gifts To Celebrate the Occasion</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/Ceremony.jpg' %}" alt="">
+                </div>
+                <span class="job-field">BACHELORTTE PARTY || 1 week ago</span>
+                <h1 class="about">24 Lemon-Themed Bridal Shower Ideas Perfect for Your Celebration</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/pic1.jpg' %}" alt="">
+                </div>
+                <span class="job-field">BACHELORTTE PARTY || 2 day ago</span>
+                <h1 class="about"> notebook The Ultimate Bridal Shower Planning Timeline and Checklist</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/last.jpg' %}" alt="">
+                </div>
+                <span class="job-field">wedding decor || 1 day ago</span>
+                <h1 class="about">The 17 Best Personalized Bridesmaids Gifts Your Bridal Party Will Love</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/corporation.jpg' %}" alt="">
+                </div>
+                <span class="job-field">BACHELORTTE PARTY || 9 day ago</span>
+                <h1 class="about">20 Plus-Size Bridal Shower Dresses for Every Budget, Season, and Formality</h1>
+                <button class="btn">read detail</button>
+            </div>
+        </div>
+        <div class="news-btn">
+            <a href="{% url 'news' %}" class="btn">SEE ALL NEWS</a>
+        </div>
+    </header>
+    <!-- news page end -->
+
+    <!-- gift ideas page start -->
+    <header class="gift-ideas">
+        <h1 class="title">Gift ideas<span>.</span></h1>
+        <div class="news-order">
+            <div class="news-order-div">
+                <div class="img-container">
+                    <img src="{% static 'img/albem.webp' %}" alt="">
+                </div>
+                <div class="discription">
+                    <span class="job-field">WEDDING PHOTOGRAPHY || 02/24/23</span>
+                    <a href="{% url 'gifts' %}" class="about">The 5 Best Budget-Friendly Wedding Photo Albums on Amazon</a>
+                </div>
+            </div>
+            <div class="news-order-div">
+                <div class="img-container">
+                    <img src="{% static 'img/gift1.webp' %}" alt="">
+                </div>
+                <div class="discription">
+                    <span class="job-field">gift ideas || 02/25/23</span>
+                    <a href="{% url 'gifts' %}" class="about">The 37 Best Gifts for Your Boyfriend That He’ll Love (and Use)</a>
+                </div>
+            </div>
+            <div class="news-order-div">
+                <div class="img-container">
+                    <img src="{% static 'img/wedding gift.webp' %}" alt="">
+                </div>
+                <div class="discription">
+                    <span class="job-field">gift ideas || 01/05/23</span>
+                    <a href="{% url 'gifts' %}" class="about">Wedding Gift Etiquette and Ideas for a Second Marriage</a>
+                </div>
+            </div>
+        </div>
+        <div class="news-btn">
+            <a href="{% url 'gifts' %}" class="btn">SEE more gift's</a>
+        </div>
+    </header>
+    <!-- gift ideas page start -->
+
+    <!-- contact page start -->
+    <header class="contact-us">
+        <h1 class="title">Contact us.</h1>
+            <div class="form-container">
+                <h3>any question or remarks? just write us a message!</h3>
+                <form action="{% url 'contact' %}">
+                    <div class="email-name-container">
+                        <div class="input-container">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="enter a valid email address">
+                        </div>
+                        <div class="input-container">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="enter your name">
+                        </div>
+                    </div>
+                    <input type="submit" value="submit" name="submit" class="btn">
+                </form>
+            </div>
+
+    </header>
+    <!-- contact page end -->
+
+    <!-- footer page start -->
+    <footer>
+        <div class="follwer-viwe">
+            <li><a href="#"><i class="fab fa-facebook"></i> 3.7M</a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i> 1.3M</a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i> 195K</a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fab fa-tiktok"></i> 666K</a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fa-regular fa-envelope"></i> SUBSCRIBE</a></li>
+            <span class="separat-line"></span>
+        </div>
+
+        <div class="box-container">
+            <div class="login">
+                <li><a href="{% url 'index' %}">ELITE EVENTS.</a></li>
+                <li><h4>sign up for the brides newsletter</h4></li>
+                <form action="">
+                    <input type="email" name="email" placeholder="you@biltinsa.com" required>
+                    <input type="submit" value="SUBSCRIBE" class="btn-white">
+                </form>
+                <div class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </div>
+
+            <ul class="Quick-link">
+                <h3>Quick link</h3>
+                <li><a href="{% url 'news' %}">news</a></li>
+                <li><a href="{% url 'fashion' %}">fashion</a></li>
+                <li><a href="{% url 'ideas' %}">ideas</a></li>
+                <li><a href="{% url 'gifts' %}">REGISTRY & GIFTS</a></li>
+            </ul>
+            <ul class="about">
+                <h3>ABOUT US</h3>
+                <li><a href="{% url 'about' %}">ABOUT US</a></li>
+                <li><a href="#">ADVERTISE</a></li>
+                <li><a href="#">TERMS OF USE</a></li>
+                <li><a href="#">EDITORIAL POLICY</a></li>
+            </ul>
+            <ul class="POLICY">
+                <h3>POLICY</h3>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                <li><a href="#">DO NOT SELL MY <br>PERSONAL INFORMATION</a></li>
+                <li style="color: white;font-size: 14px;">&copy; 2023 copyright: <small style="color: var(--orange);cursor: pointer;text-transform: uppercase;">biltinsa.org</small></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- footer page end -->
+
+</body>
+</html>

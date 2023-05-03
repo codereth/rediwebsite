@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celebrity, wedding & news</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <!-- header page start -->
+    <header>
+        <div class="navbar">
+            <section class="flex">
+                <a href="{% url 'index' %}" class="logo">elite events<span>.</span></a>
+                <nav>
+                    <li><a href="{% url 'index' %}">home</a></li>
+                    <li><a href="{% url 'news' %}">news</a></li>
+                    <li><a href="{% url 'fashion' %}">fashion</a></li>
+                    <li><a href="{% url 'ideas' %}">gallery</a></li>
+                    <li><a href="{% url 'gifts' %}">GIFTS</a></li>
+                    <li><a href="{% url 'about' %}">about</a></li>
+                    <li><a href="{% url 'contact' %}">contact</a></li>
+                </nav>
+                <form class="search-form">
+                    <input type="text" placeholder="search here..." required maxlength="100" name="search_box">
+                    <button type="submit" class="fas fa-search" name="search_btn"></button>
+                </form>
+                
+                <div class="icons">
+                    <div id="user-btn" class="fas fa-user"></div>
+                    <div id="toggle-btn" class="fas fa-sun"></div>
+                </div>
+            </section>
+        <div class="header_title contact-header-title">
+            <h1>celebrity, wedding & new's</h1>
+            <p><span>home</span> > news</p>
+        </div>
+    </header>
+    <!-- header page end -->
+    
+    <!-- news page start -->
+    <header id="News">
+        <h1 class="title">daily NEWS<span>.</span></h1>
+
+        <div class="news-order">
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/abt-1.jpg' %}" alt="">
+                </div>
+                <span class="job-field">BACHELORTTE PARTY || 5 day ago</span>
+                <h1 class="about">The 17 Best Personalized Bridesmaids Gifts Your Bridal Party Will Love</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/bg2.jpg' %}" alt="">
+                </div>
+                <span class="job-field">wedding dresses || 4 week ago</span>
+                <h1 class="about">The 18 Best Personalized Bridal Shower Gifts To Celebrate the Occasion</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/Ceremony.jpg' %}" alt="">
+                </div>
+                <span class="job-field">BACHELORTTE PARTY || 1 week ago</span>
+                <h1 class="about">24 Lemon-Themed Bridal Shower Ideas Perfect for Your Celebration</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/pic1.jpg' %}" alt="">
+                </div>
+                <span class="job-field">BACHELORTTE PARTY || 2 day ago</span>
+                <h1 class="about"> notebook The Ultimate Bridal Shower Planning Timeline and Checklist</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/last.jpg' %}" alt="">
+                </div>
+                <span class="job-field">wedding decor || 1 day ago</span>
+                <h1 class="about">The 17 Best Personalized Bridesmaids Gifts Your Bridal Party Will Love</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/corporation.jpg' %}" alt="">
+                </div>
+                <span class="job-field">BACHELORTTE PARTY || 9 day ago</span>
+                <h1 class="about">20 Plus-Size Bridal Shower Dresses for Every Budget, Season, and Formality</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/wedding gift.webp' %}" alt="">
+                </div>
+                <span class="job-field">BACHELORTTE PARTY || 9 day ago</span>
+                <h1 class="about">20 Plus-Size Bridal Shower Dresses for Every Budget, Season, and Formality</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/table_s.jpg' %}" alt="">
+                </div>
+                <span class="job-field">BACHELORTTE PARTY || 9 day ago</span>
+                <h1 class="about">20 Plus-Size Bridal Shower Dresses for Every Budget, Season, and Formality</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/event2.jpg' %}" alt="">
+                </div>
+                <span class="job-field">BACHELORTTE PARTY || 9 day ago</span>
+                <h1 class="about">20 Plus-Size Bridal Shower Dresses for Every Budget, Season, and Formality</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/photo_2023-02-24_12-04-48.jpg' %}" alt="">
+                </div>
+                <span class="job-field">BACHELORTTE PARTY || 9 day ago</span>
+                <h1 class="about">20 Plus-Size Bridal Shower Dresses for Every Budget, Season, and Formality</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/couple.jpg' %}" alt="">
+                </div>
+                <span class="job-field">BACHELORTTE PARTY || 9 day ago</span>
+                <h1 class="about">20 Plus-Size Bridal Shower Dresses for Every Budget, Season, and Formality</h1>
+                <button class="btn">read detail</button>
+            </div>
+            <div class="news-order-div">
+                <div class="news-img">
+                    <img src="{% static 'img/reception.jpg' %}" alt="">
+                </div>
+                <span class="job-field">BACHELORTTE PARTY || 9 day ago</span>
+                <h1 class="about">20 Plus-Size Bridal Shower Dresses for Every Budget, Season, and Formality</h1>
+                <button class="btn">read detail</button>
+            </div>
+        </div>
+    </header>
+    <!-- news page end -->
+
+
+
+
+
+
+     <!-- footer page start -->
+     <footer>
+        <div class="follwer-viwe">
+            <li><a href="#"><i class="fab fa-facebook"></i> 3.7M </a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i> 1.3M</a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i> 195K</a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fab fa-tiktok"></i> 666K</a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fa-regular fa-envelope"></i> SUBSCRIBE</a></li>
+            <span class="separat-line"></span>
+        </div>
+
+        <div class="box-container">
+            <div class="login">
+                <li><a href="{% url 'index' %}">ELITE EVENTS.</a></li>
+                <li><h4>sign up for the brides newsletter</h4></li>
+                <form action="">
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                    <input type="submit" value="SUBSCRIBE" class="btn-white">
+                </form>
+                <div class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </div>
+
+            <ul class="Quick-link">
+                <h3>Quick link</h3>
+                <li><a href="{% url 'news' %}">news</a></li>
+                <li><a href="{% url 'fashion' %}">fashion</a></li>
+                <li><a href="{% url 'ideas' %}">ideas</a></li>
+                <li><a href="{% url 'gifts' %}">REGISTRY & GIFTS</a></li>
+            </ul>
+            <ul class="about">
+                <h3>ABOUT US</h3>
+                <li><a href="{% url 'about' %}">ABOUT US</a></li>
+                <li><a href="#">ADVERTISE</a></li>
+                <li><a href="#">TERMS OF USE</a></li>
+                <li><a href="#">EDITORIAL POLICY</a></li>
+            </ul>
+            <ul class="POLICY">
+                <h3>POLICY</h3>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                <li><a href="#">DO NOT SELL MY <br>PERSONAL INFORMATION</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- footer page end -->
+</body>
+</html>

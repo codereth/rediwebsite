@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <!-- header page start -->
+    <header>
+        <div class="navbar">
+            <section class="flex">
+                <a href="{% url 'index' %}" class="logo">elite events<span>.</span></a>
+                <nav>
+                    <li><a href="{% url 'index' %}">home</a></li>
+                    <li><a href="{% url 'news' %}">news</a></li>
+                    <li><a href="{% url 'fashion' %}">fashion</a></li>
+                    <li><a href="{% url 'ideas' %}">gallery</a></li>
+                    <li><a href="{% url 'gifts' %}">GIFTS</a></li>
+                    <li><a href="{% url 'about' %}">about</a></li>
+                    <li><a href="{% url 'contact' %}">contact</a></li>
+                </nav>
+                <form class="search-form">
+                    <input type="text" placeholder="search here..." required maxlength="100" name="search_box">
+                    <button type="submit" class="fas fa-search" name="search_btn"></button>
+                </form>
+                
+                <div class="icons">
+                    <div id="user-btn" class="fas fa-user"></div>
+                    <div id="toggle-btn" class="fas fa-sun"></div>
+                </div>
+        </div>
+        <div class="header_title contact-header-title">
+            <h1>contact us</h1>
+            <p><span>home</span> > contact us</p>
+        </div>
+    </header>
+    <!-- header page end -->
+
+    <!-- contact page start -->
+    <header class="contact-us contact-page-form">
+        <h1 class="title">Contact us.</h1>
+            <div class="form-container">
+                <h3>any question or remarks? just write us a message!</h3>
+                <form action="contact.html">
+                    <div class="email-name-container">
+                        <div class="input-container">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="enter a valid email address">
+                        </div>
+                        <div class="input-container">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="enter your name">
+                        </div>
+                        
+                    </div>
+                    <div class="message-container">
+                        <label for="name">say what you want?</label>
+                        <textarea name="message" id="" placeholder="message area..." cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="submit" name="submit" class="btn">
+                </form>
+            </div>
+
+            <div class="contact-quick-link">
+                <div class="ul-contact-page-flex">
+                    <ul>
+                        <i class="fa-solid fa-person-running"></i>
+                        <h4>ABOUT US</h4>
+                        <p>Wedding guide and plans</p>
+                    </ul>   
+                    <ul>
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>PHONE(LANDLINE)</h4>
+                        <p>+25191234567</p>
+                        <p>+25137485858</p>
+                    </ul>   
+                    <ul>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>our office location</h4>
+                        <p>225 Liberty Street, 4th Floor</br>New York, NY 10281</p>
+                    </ul>   
+                </div>
+            </div>
+    </header>
+    <!-- contact page end -->
+
+    <header class="contact-us-page-map">  
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </header>
+    <!-- footer page start -->
+    <footer>
+        <div class="follwer-viwe">
+            <li><a href="#"><i class="fab fa-facebook"></i> 3.7M</a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i> 1.3M</a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i> 195K</a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fab fa-tiktok"></i> 666K</a></li>
+            <li>||</li>
+            <li><a href="#"><i class="fa-regular fa-envelope"></i> SUBSCRIBE</a></li>
+            <span class="separat-line"></span>
+        </div>
+
+        <div class="box-container">
+            <div class="login">
+                <li><a href="{% url 'index' %}">ELITE EVENTS.</a></li>
+                <li><h4>sign up for the brides newsletter</h4></li>
+                <form action="">
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                    <input type="submit" value="SUBSCRIBE" class="btn-white">
+                </form>
+                <div class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </div>
+
+            <ul class="Quick-link">
+                <h3>Quick link</h3>
+                <li><a href="{% url 'news' %}">news</a></li>
+                <li><a href="{% url 'fashion' %}">fashion</a></li>
+                <li><a href="{% url 'ideas' %}">gallery</a></li>
+                <li><a href="{% url 'gifts' %}">REGISTRY & GIFTS</a></li>
+            </ul>
+            <ul class="about">
+                <h3>ABOUT US</h3>
+                <li><a href="{% url 'about' %}">ABOUT US</a></li>
+                <li><a href="#">ADVERTISE</a></li>
+                <li><a href="#">TERMS OF USE</a></li>
+                <li><a href="#">EDITORIAL POLICY</a></li>
+            </ul>
+            <ul class="POLICY">
+                <h3>POLICY</h3>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                <li><a href="#">DO NOT SELL MY <br>PERSONAL INFORMATION</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- footer page end -->
+
+
+
+
+
+    
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
