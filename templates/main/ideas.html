@@ -17,13 +17,13 @@
             <section class="flex">
                 <a href="{% url 'index' %}" class="logo">elite events<span>.</span></a>
                 <nav>
-                    <li><a href="{% url 'index' %}">home</a></li>
-                    <li><a href="{% url 'news' %}">news</a></li>
-                    <li><a href="{% url 'fashion' %}">fashion</a></li>
-                    <li><a href="{% url 'ideas' %}">gallery</a></li>
-                    <li><a href="{% url 'gifts' %}">GIFTS</a></li>
-                    <li><a href="{% url 'about' %}">about</a></li>
-                    <li><a href="{% url 'contact' %}">contact</a></li>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'news' %}">News</a></li>
+                    <li><a href="{% url 'fashion' %}">Fashion</a></li>
+                    <li><a href="{% url 'ideas' %}">Gallery</a></li>
+                    <li><a href="{% url 'gifts' %}">Gifts</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
                 </nav>
                 <form class="search-form">
                     <input type="text" placeholder="search here..." required maxlength="100" name="search_box">
@@ -218,8 +218,8 @@
             <div class="login">
                 <li><a href="{% url 'index' %}">ELITE EVENTS.</a></li>
                 <li><h4>sign up for the brides newsletter</h4></li>
-                <form action="">
-                    <input type="email" name="email" placeholder="you@example.com" required>
+                <form method="post" action="#">
+                    <input type="email" name="subscriber_email" placeholder="you@example.com" required>
                     <input type="submit" value="SUBSCRIBE" class="btn-white">
                 </form>
                 <div class="icons">

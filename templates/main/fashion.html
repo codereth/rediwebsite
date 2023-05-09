@@ -67,7 +67,7 @@
             <div class="fashion-part">
                 <div class="fashion-title">Our favorite just-in style</div>
                 <div class="fashion-list-container">
-                    <div class="fashion-list">
+                    <div id="dress" class="fashion-list">
                         <figure>
                             <img src="{% static 'img/images/AMY-B-600x800.jpg' %}" alt="">
                         </figure>
@@ -180,8 +180,8 @@
             <div class="login">
                 <li><a href="{% url 'index' %}">ELITE EVENTS.</a></li>
                 <li><h4>sign up for the brides newsletter</h4></li>
-                <form action="">
-                    <input type="email" name="email" placeholder="you@example.com" required>
+                <form method="post" action="#">
+                    <input type="email" name="subscriber_email" placeholder="you@example.com" required>
                     <input type="submit" value="SUBSCRIBE" class="btn-white">
                 </form>
                 <div class="icons">

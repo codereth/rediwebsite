@@ -47,7 +47,7 @@
         <h1 class="title">Contact us.</h1>
             <div class="form-container">
                 <h3>any question or remarks? just write us a message!</h3>
-                <form action="contact.html">
+                <form method="post" action="#">
                     <div class="email-name-container">
                         <div class="input-container">
                             <label for="email">Email</label>
@@ -112,8 +112,8 @@
             <div class="login">
                 <li><a href="{% url 'index' %}">ELITE EVENTS.</a></li>
                 <li><h4>sign up for the brides newsletter</h4></li>
-                <form action="">
-                    <input type="email" name="email" placeholder="you@example.com" required>
+                <form method="post" action="#">
+                    <input type="email" name="subscriber_email" placeholder="you@example.com" required>
                     <input type="submit" value="SUBSCRIBE" class="btn-white">
                 </form>
                 <div class="icons">
